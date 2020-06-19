@@ -1,0 +1,14 @@
+<form action="/index" method="POST">
+
+    <div class="form-group">
+      <label for="url">URL</label>
+      <input type="url" id="url" name="url" class="form-control" placeholder="Enter The URL"
+        value="<%= typeof url != 'undefined' ? url : '' %>" />
+    </div>
+
+    <div class="text-center"><button class="button" type="submit">Get Images</button></div>
+  </form>
+
+  <div class="results">
+      <h1>The Result is: </h1>
+  </div>
