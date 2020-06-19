@@ -1,14 +1,30 @@
 <form action="/index" method="POST">
 
-    <div class="form-group">
-      <label for="url">URL</label>
-      <input type="url" id="url" name="url" class="form-control" placeholder="Enter The URL"
-        value="<%= typeof url != 'undefined' ? url : '' %>" />
+    <div class="row mt-5">
+    <div class="col-md-6 m-auto">
+        <div class="card card-body">
+            <h1 class="text-center mb-3">
+                <i class="fas fa-user-plus"></i> Upload
+            </h1>
+
+            <div class="form-group">
+                <label for="url">URL</label>
+                <input type="url" id="url" name="url" class="form-control" placeholder="Enter The URL"
+                    value="<%= typeof url != 'undefined' ? url : '' %>" />
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Get Images</button>
+            </form>
+        </div>
     </div>
+</div>
 
-    <div class="text-center"><button class="button" type="submit">Get Images</button></div>
-  </form>
+</form>
 
-  <div class="results">
-      <h1>The Result is: </h1>
-  </div>
+<div class="row mt-5">
+    <div class="col-md-6 m-auto">
+        <div class="results">
+            <h1>The Result is: </h1>
+        </div>
+    </div>
+</div>

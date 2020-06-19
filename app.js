@@ -1,9 +1,11 @@
 const express = require('express');
 const session = require('express-session');
+const expressLayouts = require('express-ejs-layouts');
 // const flash = require('connect-flash');
 
 const app = express();
 
+app.use(expressLayouts);
 app.set('view engine', 'ejs');
 
 app.use(session({
